@@ -26,13 +26,15 @@ RUN apt-get install -y \
         libcurl4-openssl-dev \
         libicu-dev \
         libmcrypt-dev \
-        libmysqlclient-dev \
         libpng-dev \
         mysql-client \
         ruby-full \
         software-properties-common \
         vim \
         zip
+
+# install node dependencies
+RUN apt-get update && apt-get install -my wget gnupg
 
 # Install PHP and NodeJS
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \

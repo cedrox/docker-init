@@ -30,7 +30,6 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
       libpng-dev \
       libmcrypt-dev \
       mysql-client \
-      libmysqlclient-dev \
       ruby-full \
       vim \
       nodejs \
